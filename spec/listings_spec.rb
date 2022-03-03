@@ -3,14 +3,15 @@ require_relative '../lib/document'
 describe Listings do
   describe '#Listings is a class type' do
     let(:list) { Listings.new }
-    # let(:list_product) { list.select_list }
 
-    it 'should return an Hash object' do
+    it 'should return an class object' do
       expect(list.class).to eql(Listings)
     end
+  end
 
-    # it 'should return a key and a value' do
-    #   expect(request_random.length).to eql(2)
-    # end
+  describe Listings.new('This document is made of plaintext') do
+    it 'checks for object attribute and proper values' do
+      expect(subject).to have_attributes(product: 'This document is made of plaintext')
+    end
   end
 end
