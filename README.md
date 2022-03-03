@@ -39,11 +39,6 @@ To install RUBY, you can use this link: https://www.ruby-lang.org/en/documentati
 - Twitter: [@enaburekhaneric](https://twitter.com/enaburekhaneric)
 - Linkedin: [@ericenaburekhan](https://www.linkedin.com/in/eric-enaburekhan-801a28100/)
 
-
-## Show your support
-
-Contributions, issues and feature requests are welcome!.
-
 ## Acknowledgments
 
 - Many thanks to open source community for making it possible for me to use the available open source tools.
