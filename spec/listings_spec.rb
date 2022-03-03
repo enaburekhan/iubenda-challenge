@@ -1,10 +1,10 @@
-require_relative '../lib/document'
+require_relative '../lib/listings'
 
 describe Listings do
   describe '#Listings is a class type' do
     let(:list) { Listings.new }
 
-    it 'should return an class object' do
+    it 'should return a class object' do
       expect(list.class).to eql(Listings)
     end
   end

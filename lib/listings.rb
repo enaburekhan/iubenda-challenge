@@ -14,7 +14,7 @@ class Listings
   def build
     b = binding
     # create and run templates, filling member data variables
-    ERB.new(<<-'END_PRODUCT'.gsub(/^\s+/, ''), 0, '', '@product').result b
+    ERB.new(<<-'END_PRODUCT'.gsub(/^\s+/, ''), 0, '-', '@product').result b
       <%= PRODUCT[:name] %>
       <% if true %>
          <%= PRODUCT[:desc] %>
