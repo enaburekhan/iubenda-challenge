@@ -12,9 +12,9 @@ class Listings
                 { 'id': 4, 'text': 'The white horse is white.' }
               ],
               :sections => [
-                { "id": 1, "clauses_ids": [1, 2] }
-              ]
-             }
+                { 'id': 1, 'clauses_ids': [1, 2] }
+              ],
+              :footer => 'Your legals.' }
 
   attr_reader :product
 
@@ -27,12 +27,13 @@ class Listings
     # create and run templates, filling member data variables
     ERB.new(<<-'END_PRODUCT'.gsub(/^\s+/, ''), 0, '', '@product').result b
       <%= PRODUCT[:name] %>
-      <%= PRODUCT[:desc] %>
-      <%= PRODUCT[:uniform_word] %>  <%= PRODUCT[:clauses][2][:text] %>
-      <%= PRODUCT[:uniform_word] %>  <%= PRODUCT[:clauses][3][:text] %>
-      <%= PRODUCT[:uniform_word] %>  <%= PRODUCT[:sections][0][:clauses_ids] = 
-      [PRODUCT[:clauses][0][:text], PRODUCT[:clauses][1][:text]].join(';') %>
-
+      <% if true %>
+         <%= PRODUCT[:desc] %>
+         <%= PRODUCT[:uniform_word] %> <%= PRODUCT[:clauses][2][:text] %>
+         <%= PRODUCT[:uniform_word] %> <%= PRODUCT[:clauses][3][:text] %>
+         <%= PRODUCT[:uniform_word] %> <%= PRODUCT[:sections][0][:clauses_ids] =
+           [PRODUCT[:clauses][0][:text], PRODUCT[:clauses][1][:text]].join(';') %>
+      <% end %>
       <%= PRODUCT[:footer] %>
     END_PRODUCT
   end
