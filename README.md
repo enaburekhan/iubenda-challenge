@@ -28,7 +28,8 @@ To install RUBY, you can use this link: https://www.ruby-lang.org/en/documentati
    - Run rspec
 
 **How much time it took me to complete this challenge**
-It took me an average of about 5 hours. I would have written more tests, if given more time.
+- It took me an average of about 5 hours
+- I would have written more tests, if given more time.
 
 ## Author
 
