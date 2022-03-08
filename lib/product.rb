@@ -1,5 +1,5 @@
 module Product
-  PRODUCT = {
+  Product = {
     :name => 'A T&C Document',
     :desc => 'This document is made of plaintext.',
     :uniform_word => 'Is made of',
